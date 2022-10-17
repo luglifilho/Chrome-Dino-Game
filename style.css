@@ -1,7 +1,11 @@
+body{
+    background:  #fafafa;
+}
+
 .dino {
     width: 60px;
     height: 60px;
-    background:  url(dino.png);
+    background-image:  url(dino.png);
     position: absolute;
     bottom: 0;
 }
@@ -10,5 +14,31 @@
     width: 60px;
     height: 60px;
     bottom: 0;
-    background: url(cactus.png);
+    background-image: url(cactus.png);
+}
+
+@keyframes sliderrigth {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position:  0;
+    }
+}
+
+.container { 
+    position: absolute;
+    bottom: 0;
+    background-image:  url(background.png);
+    background-repeat: repeat-x;
+    animation: sliderrigth 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+#placar{
+    width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
 }
